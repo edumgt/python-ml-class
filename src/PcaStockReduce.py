@@ -1,11 +1,15 @@
 import os
 import time
+import inspect
 
 import matplotlib.pyplot as plt
 import numpy as np
 import korean_font  # noqa: F401
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+
+# PCA 클래스의 전체 소스코드 출력
+print(inspect.getsource(PCA))
 
 os.makedirs("../result", exist_ok=True)
 

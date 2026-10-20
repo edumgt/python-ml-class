@@ -1,6 +1,7 @@
 import os
 import time
 import warnings
+import inspect
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -9,6 +10,9 @@ import pandas as pd
 import korean_font  # noqa: F401
 from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.stattools import adfuller
+
+
+print(inspect.getsource(ARIMA))
 
 warnings.filterwarnings("ignore")
 os.makedirs("../result", exist_ok=True)
